@@ -12,7 +12,12 @@ import com.futrue.frame.widget.GridDividerItemDecoration
 import com.futrue.huomai.R
 import com.futrue.huomai.main.home.personaldetails.personalvideo.PersonalVideoAdapter
 import com.futrue.huomai.main.home.video.VideoPlayerActivity
-
+/**
+ * @package    MyVideoFragment.kt
+ * @author     luan
+ * @date       2019-11-05
+ * @des        视频
+ */
 class MyVideoFragment : BaseRefreshListFragment<MyVideoPresenter, IBean, PersonalVideoAdapter>() {
 
 
@@ -25,7 +30,7 @@ class MyVideoFragment : BaseRefreshListFragment<MyVideoPresenter, IBean, Persona
 
     override fun initView(savedInstanceState: Bundle?) {
         mSwipeRefreshLayout.isEnabled = false
-        mRecyclerView?.isNestedScrollingEnabled = false
+//        mRecyclerView?.isNestedScrollingEnabled = false
         mRecyclerView?.addItemDecoration(
             GridDividerItemDecoration(
                 SizeUtils.dp2px(5f),

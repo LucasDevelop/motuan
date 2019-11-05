@@ -7,7 +7,12 @@ import com.futrue.frame.base.fragment.BaseFragment
 import com.futrue.huomai.main.my.secret.look.SecretLookFragment
 import com.futrue.huomai.main.my.secret.video.SecretVideoFragment
 import kotlinx.android.synthetic.main.fragment_my_secret.*
-
+/**
+ * @package    MySecretFragment.kt
+ * @author     luan
+ * @date       2019-11-05
+ * @des        隐私
+ */
 class MySecretFragment : BaseFragment() ,View.OnClickListener{
 
 

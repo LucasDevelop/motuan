@@ -19,11 +19,15 @@ import com.futrue.huomai.window.SharePopup
 import com.sothree.slidinguppanel.SlidingUpPanelLayout
 import kotlinx.android.synthetic.main.activity_video_player.*
 
-
+/**
+ * @package    VideoPlayerActivity.kt
+ * @author     luan
+ * @date       2019-11-05
+ * @des        视频详情
+ */
 class VideoPlayerActivity :
     BaseRefreshListActivity<VideoPlayerPresenter, IBean, VideoPlayerAdapter>(),
     View.OnClickListener {
-
 
     companion object {
         fun launch(activity: Activity) {
@@ -42,6 +46,12 @@ class VideoPlayerActivity :
     override fun initData() {
         mSwipeRefreshLayout.isEnabled = false
         GlideUtil.loadRoundCornersImg(this, "", iv_head)
+        initComment()
+        mBaseAdapter.setNewData(List(5) { IBean() })
+    }
+
+    //评论
+    private fun initComment() {
         val comment = et_comment.text.toString().trim()
         val adapter = CommentAdapter()
         recycleView.layoutManager = LinearLayoutManager(this)
@@ -58,7 +68,6 @@ class VideoPlayerActivity :
             }
         }
         pagerSnapHelper.attachToRecyclerView(mRecyclerView)
-        mBaseAdapter.setNewData(List(5) { IBean() })
     }
 
     override fun initEvent() {

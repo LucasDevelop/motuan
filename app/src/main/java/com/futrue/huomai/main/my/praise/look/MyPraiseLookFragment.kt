@@ -20,7 +20,7 @@ class MyPraiseLookFragment :
         mBaseAdapter.setNewData(List(1) {
             IBean()
         })
-        mRecyclerView?.isNestedScrollingEnabled = false
+//        mRecyclerView?.isNestedScrollingEnabled = false
     }
 
     override fun initData() {

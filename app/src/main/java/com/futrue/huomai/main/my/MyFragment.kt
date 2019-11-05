@@ -24,7 +24,12 @@ import kotlinx.android.synthetic.main.content_scrolling.tv_lookNum
 import kotlinx.android.synthetic.main.content_scrolling.tv_videoNum
 import kotlinx.android.synthetic.main.fragment_my.*
 import org.devio.takephoto.model.TResult
-
+/**
+ * @package    MyFragment.kt
+ * @author     luan
+ * @date       2019-11-05
+ * @des        我的
+ */
 class MyFragment : BaseNetFragment<MyPresenter>(), View.OnClickListener {
 
 

@@ -11,14 +11,17 @@ import com.futrue.huomai.main.home.attention.AttentionFragment
 import com.futrue.huomai.main.home.hot.HotFragment
 import com.futrue.huomai.main.home.search.SearchActivity
 import kotlinx.android.synthetic.main.fragment_home.*
-
+/**
+ * @package    HomeFragment.kt
+ * @author     luan
+ * @date       2019-11-05
+ * @des        首页
+ */
 class HomeFragment : BaseNetFragment<HomePresenter>(), View.OnClickListener {
-
 
 
     private val mHotFragment = HotFragment()
     private val mAttentionFragment = AttentionFragment()
-
 
     override fun getLayoutID(): Int = R.layout.fragment_home
 

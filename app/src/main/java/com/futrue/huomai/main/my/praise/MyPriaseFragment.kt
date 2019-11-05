@@ -7,7 +7,12 @@ import com.futrue.frame.base.fragment.BaseFragment
 import com.futrue.huomai.main.my.praise.look.MyPraiseLookFragment
 import com.futrue.huomai.main.my.praise.video.MyPraiseVideoFragment
 import kotlinx.android.synthetic.main.fragment_my_priase.*
-
+/**
+ * @package    MyPriaseFragment.kt
+ * @author     luan
+ * @date       2019-11-05
+ * @des        赞过
+ */
 class MyPriaseFragment : BaseFragment(), View.OnClickListener {
 
     private val mMyPraiseLookFragment = MyPraiseLookFragment()

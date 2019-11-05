@@ -7,7 +7,12 @@ import com.futrue.frame.data.api.BaseModel
 import com.futrue.frame.data.bean.IBean
 import com.futrue.huomai.main.home.personaldetails.personallook.PersonalLookAdapter
 import com.futrue.huomai.main.home.video.VideoPlayerActivity
-
+/**
+ * @package    MyLookFragment.kt
+ * @author     luan
+ * @date       2019-11-05
+ * @des        看看
+ */
 class MyLookFragment : BaseRefreshListFragment<MyLookPresenter, IBean, PersonalLookAdapter>() {
 
 
@@ -18,7 +23,7 @@ class MyLookFragment : BaseRefreshListFragment<MyLookPresenter, IBean, PersonalL
         mBaseAdapter.setNewData(List(1) {
             IBean()
         })
-        mRecyclerView?.isNestedScrollingEnabled = false
+//        mRecyclerView?.isNestedScrollingEnabled = false
     }
 
     override fun initData() {

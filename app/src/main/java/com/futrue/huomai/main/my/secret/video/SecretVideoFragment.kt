@@ -23,7 +23,7 @@ class SecretVideoFragment :
 
     override fun initView(savedInstanceState: Bundle?) {
         mSwipeRefreshLayout.isEnabled = false
-        mRecyclerView?.isNestedScrollingEnabled = false
+//        mRecyclerView?.isNestedScrollingEnabled = false
         mRecyclerView?.addItemDecoration(
             GridDividerItemDecoration(
                 SizeUtils.dp2px(5f),

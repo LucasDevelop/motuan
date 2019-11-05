@@ -34,6 +34,7 @@
             <TextView
                 android:id="@+id/tv_goodsTitle"
                 style="@style/TextViewTheme"
+                android:layout_marginLeft="7.5dp"
                 android:layout_marginTop="20dp"
                 android:layout_toEndOf="@id/iv_goodsCover"
                 android:ellipsize="end"
@@ -45,6 +46,7 @@
                 android:id="@+id/tv_goodsMoney"
                 style="@style/TextViewTheme"
                 android:layout_below="@id/tv_goodsTitle"
+                android:layout_marginLeft="7.5dp"
                 android:layout_marginTop="6dp"
                 android:layout_toEndOf="@id/iv_goodsCover"
                 android:ellipsize="end"
@@ -58,8 +60,8 @@
                 android:layout_alignParentEnd="true"
                 android:padding="7dp"
                 android:text="X"
-                android:textSize="12sp"
-                android:textColor="@color/minorTextColor" />
+                android:textColor="@color/minorTextColor"
+                android:textSize="12sp" />
 
         </RelativeLayout>
 
@@ -71,9 +73,9 @@
             android:ellipsize="end"
             android:lineSpacingExtra="3dp"
             android:maxLines="2"
-            tools:text="sdfsfodsufpdsjf;jds464654"
             android:textColor="@color/frame_white_color"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:text="sdfsfodsufpdsjf;jds464654" />
 
 
         <TextView
@@ -118,15 +120,16 @@
                 android:background="@drawable/shape_plus_bg"
                 android:gravity="center"
                 android:text="+"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
         </FrameLayout>
 
-        <ImageView
+        <CheckBox
             android:id="@+id/iv_like"
             android:layout_width="32dp"
             android:layout_height="30dp"
             android:layout_marginTop="22dp"
-            android:src="@mipmap/video_like" />
+            android:background="@drawable/select_video_like"
+            android:button="@null" />
 
         <TextView
             android:id="@+id/tv_likeNum"
@@ -166,11 +169,21 @@
             android:textSize="12sp" />
 
 
-        <ImageView
+        <FrameLayout
+            android:id="@+id/v_icon_view"
+            android:layout_marginTop="20dp"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:src="@mipmap/music" />
+            android:background="@mipmap/ic_icon2">
+
+            <ImageView
+                android:id="@+id/v_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/music" />
+        </FrameLayout>
+
 
     </LinearLayout>
 

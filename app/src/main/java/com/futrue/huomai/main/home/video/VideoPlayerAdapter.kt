@@ -1,5 +1,8 @@
 package com.futrue.huomai.main.home.video
 
+import android.view.View
+import android.view.animation.AnimationUtils
+import com.blankj.utilcode.util.KeyboardUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.futrue.frame.data.bean.IBean
@@ -18,11 +21,12 @@ class VideoPlayerAdapter @Inject constructor() :
             setText(R.id.tv_content, "在喧嚣中迷失了自己，便想安静下来，#我要上热门# @旅游达人...")
             setText(R.id.tv_location, "重庆解放碑")
             GlideUtil.loadRoundCornersImg(mContext, "", getView(R.id.iv_head))
-            setImageResource(R.id.iv_like, R.mipmap.video_like)
+//            setImageResource(R.id.iv_like, R.mipmap.video_like)
             setText(R.id.tv_likeNum, "123")
             setText(R.id.tv_commentNum, "321")
             setText(R.id.tv_shareNum, "231")
-
+            val loadAnimation = AnimationUtils.loadAnimation(mContext, R.anim.anim_rotate_icon)
+            helper.getView<View>(R.id.v_icon_view).startAnimation(loadAnimation)
 
             addOnClickListener(R.id.tv_goodsClose,R.id.iv_like,R.id.iv_comment,R.id.iv_share,R.id.fl_user)
         }

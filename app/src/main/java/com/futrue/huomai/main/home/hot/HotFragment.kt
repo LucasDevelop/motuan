@@ -28,7 +28,7 @@ class HotFragment : BaseRefreshListFragment<HotPresenter, IBean, HotAdapter>() {
         mRecyclerView?.addItemDecoration(
             GridDividerItemDecoration(
                 SizeUtils.dp2px(12f),
-                GridDividerItemDecoration.GRIDLAYOUT
+                GridDividerItemDecoration.STAGGEREDGRIDLAYOUT
             )
         )
         mBaseAdapter.setNewData(List(10) {
