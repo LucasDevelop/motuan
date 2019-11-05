@@ -1,0 +1,95 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true    //加上这行即可
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //开启协程
+//    kotlin {
+//        experimental {
+//            support-v4       coroutines 'enable'
+//        }
+//    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api 'com.android.support:appcompat-v7:28.0.0'
+    api 'com.android.support:support-v4:28.0.0'
+    api 'com.android.support:recyclerview-v7:28.0.0'
+    api 'com.android.support:design:28.0.0'
+    //Glide
+    api 'com.github.bumptech.glide:glide:4.8.0'
+    api 'com.github.bumptech.glide:compiler:4.8.0'
+    kapt 'jp.wasabeef:glide-transformations:4.0.1'
+    //retrofit
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    //rxandroid
+    api 'io.reactivex.rxjava2:rxjava:2.2.3'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    //eventbus
+    api 'org.greenrobot:eventbus:3.1.1'
+    //工具
+    api 'com.blankj:utilcode:1.22.0'
+    //okhttp
+    api 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    api 'com.squareup.okhttp3:okhttp:3.12.0'
+    //权限
+    api 'com.yanzhenjie.permission:support:2.0.1'
+    //分包
+    api 'com.android.support:multidex:1.0.3'
+    //dagger
+    api 'com.google.dagger:dagger-android-support:2.19'
+    kapt 'com.google.dagger:dagger-android-processor:2.19'
+    api 'com.google.dagger:dagger:2.19'
+    kapt 'com.google.dagger:dagger-compiler:2.19'
+    //协程
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
+    //rxlifecycle
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2'
+    //adapter
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+    //图片压缩
+    api 'top.zibin:Luban:1.1.8'
+    //json解析
+    api 'com.alibaba:fastjson:1.1.71.android'
+    //圆
+    api 'de.hdodenhof:circleimageview:3.0.0'
+    //选择图片
+    api 'com.github.crazycodeboy:TakePhoto:v4.1.0'
+    //沉浸式
+    api 'com.gyf.immersionbar:immersionbar:2.3.3'
+    //QMUI u
+    api 'com.qmuiteam:qmui:1.2.0'
+    //cookie
+//    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+}
+repositories {
+    mavenCentral()
+}

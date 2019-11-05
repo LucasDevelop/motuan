@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_group"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="选择一个群"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shop_white_arrow" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_friend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/grey_F7F7F7"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space"
+        android:text="好友"
+        android:textColor="@color/minorTextColor"
+        android:textSize="16sp" />
+
+</LinearLayout>

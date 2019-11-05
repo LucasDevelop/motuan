@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#0ff" />
+
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:background="@drawable/shape_video_goods_bg">
+
+            <ImageView
+                android:id="@+id/iv_goodsCover"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/tv_goodsTitle"
+                style="@style/TextViewTheme"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/iv_goodsCover"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/minorTextColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_goodsMoney"
+                style="@style/TextViewTheme"
+                android:layout_below="@id/tv_goodsTitle"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@id/iv_goodsCover"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_goodsClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="7dp"
+                android:text="X"
+                android:textSize="12sp"
+                android:textColor="@color/minorTextColor" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/TextViewTheme"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="2"
+            tools:text="sdfsfodsufpdsjf;jds464654"
+            android:textColor="@color/frame_white_color"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/TextViewTheme"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@mipmap/video_location"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/frame_white_color" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_user"
+            android:layout_width="40dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/shape_plus_bg"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="15sp"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="22dp"
+            android:src="@mipmap/video_like" />
+
+        <TextView
+            android:id="@+id/tv_likeNum"
+            style="@style/TextViewTheme"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/frame_white_color"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/video_comment" />
+
+        <TextView
+            android:id="@+id/tv_commentNum"
+            style="@style/TextViewTheme"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/frame_white_color"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/video_share" />
+
+        <TextView
+            android:id="@+id/tv_shareNum"
+            style="@style/TextViewTheme"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/frame_white_color"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/music" />
+
+    </LinearLayout>
+
+</RelativeLayout>

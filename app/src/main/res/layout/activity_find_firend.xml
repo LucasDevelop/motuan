@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <include layout="@layout/frame_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_recommend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <View
+                android:id="@+id/v_recommend"
+                android:layout_width="48dp"
+                android:layout_height="4dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/tv_recommend"
+                android:background="@color/yellow_FECC32" />
+
+            <TextView
+                android:id="@+id/tv_recommend"
+                style="@style/TextViewTheme"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="推荐好友"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_addressBook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <View
+                android:id="@+id/v_addressBook"
+                android:layout_width="48dp"
+                android:layout_height="4dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/tv_addressBook"
+                android:background="@color/yellow_FECC32" />
+
+            <TextView
+                android:id="@+id/tv_addressBook"
+                style="@style/TextViewTheme"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="通讯录"
+                android:textColor="@color/grey_999"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+        <FrameLayout
+            android:id="@+id/rl_findContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</LinearLayout>

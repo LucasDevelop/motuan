@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="61dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/TextViewTheme"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/space"
+        android:drawableStart="@mipmap/gray_address_book"
+        android:drawablePadding="@dimen/space"
+        android:gravity="center_vertical"
+        tools:text="你有67位好友正在玩快手" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+</LinearLayout>

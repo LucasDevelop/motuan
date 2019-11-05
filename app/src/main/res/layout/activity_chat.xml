@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_F7F7F7">
+
+    <include layout="@layout/frame_toolbar" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="2dp">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="41dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:src="@mipmap/chat_voice" />
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="2sp"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/space"
+            android:paddingEnd="@dimen/space"
+            android:background="@drawable/shape_chat_bg"
+            android:gravity="center_vertical"
+            android:hint="请输入..."
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_expression"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="6dp"
+            android:padding="10dp"
+            android:src="@mipmap/chat_expression" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="6dp"
+            android:padding="10dp"
+            android:src="@mipmap/chat_add" />
+
+    </LinearLayout>
+
+</LinearLayout>

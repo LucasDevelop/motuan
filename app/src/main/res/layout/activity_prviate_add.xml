@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:padding="10dp"
+            android:src="@mipmap/write_back" />
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerInParent="true"
+            android:text="私信"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_send"
+            style="@style/TextViewTheme"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="9dp"
+            android:padding="6dp"
+            android:text="发起群聊"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/grey_F7F7F7" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginEnd="@dimen/space"
+        android:background="@null"
+        android:drawableStart="@mipmap/search_et"
+        android:drawablePadding="12dp"
+        android:hint="搜索"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_F7F7F7" />
+
+    <RelativeLayout
+        android:id="@+id/rl_group"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="选择一个群"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shop_white_arrow" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.mcxtzhang.indexlib.IndexBar.widget.IndexBar
+            android:id="@+id/indexBar"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="120dp"
+            app:indexBarPressBackground="#39000000"
+            app:indexBarTextSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvSideBarHint"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_side_bar_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            android:visibility="gone"
+            tools:text="A"
+            tools:visibility="visible" />
+    </FrameLayout>
+</LinearLayout>

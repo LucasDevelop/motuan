@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/frame_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_F7F7F7" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_width="93dp"
+                android:text="头像"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                tools:src="@mipmap/my_default_avatar" />
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="点击更换头像"
+                android:textColor="@color/grey_999" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="12dp"
+                android:src="@mipmap/shop_white_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_F7F7F7" />
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_width="93dp"
+                android:text="昵称"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextViewTheme"
+                android:layout_weight="1"
+                android:hint="请输入昵称" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="12dp"
+                android:src="@mipmap/shop_white_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_F7F7F7" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_id"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                style="@style/TextViewTheme"
+                android:layout_width="93dp"
+                android:text="用户ID"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                style="@style/TextViewTheme"
+                tools:text="123456789" />
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="设置火脉号"
+                android:textColor="@color/yellow_FECC32"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="12dp"
+                android:src="@mipmap/shop_white_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_F7F7F7" />
+
+        <LinearLayout
+            android:id="@+id/ll_sex"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_width="93dp"
+                android:text="性别"
+                android:textSize="16sp" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/bt_sex"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="5dp"
+                android:drawableStart="@mipmap/woman"
+                android:paddingStart="4dp"
+                android:visibility="visible"
+                app:qmui_backgroundColor="@color/grey_F6F6F6"
+                app:qmui_borderWidth="0px"
+                app:qmui_radius="2dp" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                style="@style/TextViewTheme"
+                android:layout_weight="1"
+                android:hint="请选择性别" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="12dp"
+                android:src="@mipmap/shop_white_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_F7F7F7" />
+
+        <LinearLayout
+            android:id="@+id/ll_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_width="93dp"
+                android:text="生日/星座"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                style="@style/TextViewTheme"
+                android:layout_weight="1"
+                android:hint="请选择生日/星座" />
+
+            <TextView
+                android:id="@+id/tv_birthdayType"
+                style="@style/TextViewTheme"
+                android:gravity="end"
+                tools:text="设置火脉号"
+                android:textColor="@color/minorTextColor"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="12dp"
+                android:src="@mipmap/shop_white_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_F7F7F7" />
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_width="93dp"
+                android:text="所在地"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/TextViewTheme"
+                android:layout_weight="1"
+                android:hint="请选择地区" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="12dp"
+                android:src="@mipmap/shop_white_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_F7F7F7" />
+
+        <LinearLayout
+            android:id="@+id/ll_intro"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_width="93dp"
+                android:text="个人介绍"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_intro"
+                style="@style/TextViewTheme"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:hint="请输入个人介绍"
+                android:maxLines="1" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="12dp"
+                android:src="@mipmap/shop_white_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_F7F7F7" />
+
+
+</LinearLayout>

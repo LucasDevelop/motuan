@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="frame_AppTheme">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:windowBackground">@mipmap/splash</item>-->
+    </style>
+
+    <style name="TextViewTheme">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+    <style name="frame_AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="toolbar_not_space" parent="toolbar_title_black">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+    </style>
+
+
+    <style name="toolbar_title_black">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>

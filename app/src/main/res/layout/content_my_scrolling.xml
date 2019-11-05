@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <View
+                android:id="@+id/v_video"
+                android:layout_width="33dp"
+                android:layout_height="4dp"
+                android:layout_alignBottom="@+id/tv_video"
+                android:background="@color/yellow_FECC32" />
+
+            <TextView
+                android:id="@+id/tv_videoNum"
+                style="@style/TextViewTheme"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:textSize="16sp"
+                tools:text="365" />
+
+            <TextView
+                android:id="@+id/tv_video"
+                style="@style/TextViewTheme"
+                android:layout_below="@id/tv_videoNum"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="视频"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_look"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <View
+                android:id="@+id/v_look"
+                android:layout_width="33dp"
+                android:layout_height="4dp"
+                android:layout_alignBottom="@+id/tv_look"
+                android:background="@color/yellow_FECC32"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_lookNum"
+                style="@style/TextViewTheme"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:textSize="16sp"
+                tools:text="365" />
+
+            <TextView
+                android:id="@+id/tv_look"
+                style="@style/TextViewTheme"
+                android:layout_below="@id/tv_lookNum"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="看看"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_private"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <View
+                android:id="@+id/v_private"
+                android:layout_width="33dp"
+                android:layout_height="4dp"
+                android:layout_alignBottom="@+id/tv_private"
+                android:background="@color/yellow_FECC32"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_privateNum"
+                style="@style/TextViewTheme"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:textSize="16sp"
+                tools:text="365" />
+
+            <TextView
+                android:id="@+id/tv_private"
+                style="@style/TextViewTheme"
+                android:layout_below="@id/tv_privateNum"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="私密"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_praise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <View
+                android:id="@+id/v_praise"
+                android:layout_width="33dp"
+                android:layout_height="4dp"
+                android:layout_alignBottom="@+id/tv_praise"
+                android:background="@color/yellow_FECC32"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_praiseNum"
+                style="@style/TextViewTheme"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:textSize="16sp"
+                tools:text="365" />
+
+            <TextView
+                android:id="@+id/tv_praise"
+                style="@style/TextViewTheme"
+                android:layout_below="@id/tv_praiseNum"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="赞过"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

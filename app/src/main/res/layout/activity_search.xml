@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="@dimen/space"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search_bg"
+            android:drawableStart="@mipmap/search_et"
+            android:drawablePadding="12dp"
+            android:hint="请输入搜索关键词"
+            android:paddingStart="16dp"
+            android:textColor="@color/textColor"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/TextViewTheme"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="取消" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/space"
+                android:layout_marginEnd="@dimen/space"
+                android:background="@color/grey_E6E6E6" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/space">
+
+                <TextView
+                    style="@style/TextViewTheme"
+                    android:text="大家都在看"
+                    android:textColor="@color/grey_999"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_refresh"
+                    style="@style/TextViewTheme"
+                    android:layout_alignParentEnd="true"
+                    android:drawableLeft="@mipmap/search_refresh"
+                    android:drawablePadding="3dp"
+                    android:text="换一批"
+                    android:textColor="@color/minorTextColor"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                app:max_select="-1" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/frame_white_color" />
+    </FrameLayout>
+</LinearLayout>

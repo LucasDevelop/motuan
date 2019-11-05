@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/frame_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/space"
+        android:text="选择合适的话题，能被更多的人看见哦~"
+        android:textColor="@color/grey_999"
+        android:textSize="12sp" />
+
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/flowLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="12dp"
+        app:max_select="-1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/space"
+        android:text="自定义话题"
+        android:textColor="@color/grey_999"
+        android:textSize="12sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="@dimen/space"
+        android:paddingStart="12dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="@dimen/space"
+        android:background="@drawable/shape_write_bg"
+        android:hint="请输入话题"
+        android:textColor="@color/textColor"
+        android:textSize="14sp" />
+
+</LinearLayout>

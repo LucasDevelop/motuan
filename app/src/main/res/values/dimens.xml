@@ -1,0 +1,7 @@
+<resources>
+    <!-- 全局使用的大小 -->
+    <dimen name="space">12dp</dimen>
+
+
+
+</resources>

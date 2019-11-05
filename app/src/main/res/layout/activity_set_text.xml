@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/TextViewTheme"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="10dp"
+            android:text="取消"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextViewTheme"
+            android:layout_centerInParent="true"
+            android:text="设置昵称"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            style="@style/TextViewTheme"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="12dp"
+            android:text="完成"
+            android:enabled="false"
+            android:textColor="@color/grey_999"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="@dimen/space"
+        android:background="@drawable/shape_changen_bg">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/space"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入昵称"
+            android:maxLength="12"
+            android:textColor="@color/textColor"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_delet"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="2dp"
+            android:padding="10dp"
+            android:src="@mipmap/changen_delet"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            style="@style/TextViewTheme"
+            android:layout_marginEnd="12dp"
+            android:text="0/12"
+            android:textColor="@color/grey_999" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_hint"
+        style="@style/TextViewTheme"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/minorTextColor"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

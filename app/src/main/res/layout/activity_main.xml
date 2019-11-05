@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frame_white_color"
+    android:orientation="vertical"
+    tools:context=".main.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/v_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="49dp">
+
+    </FrameLayout>
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+    <!--android:id="@+id/navigation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/frame_white_color"-->
+    <!--app:labelVisibilityMode="labeled"-->
+    <!--app:menu="@menu/navigation" />-->
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@color/gray_DFDFDF"/>-->
+
+    <com.futrue.frame.widget.FragmentTabHostManager
+        android:id="@+id/mainTabHost"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="69dp" />
+
+</RelativeLayout>

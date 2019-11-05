@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/frame_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space"
+            tools:src="@mipmap/my_default_avatar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space"
+            android:layout_toEndOf="@id/iv_head"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextViewTheme"
+                android:textSize="14sp"
+                tools:text="我想静静" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/TextViewTheme"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/grey_999"
+                android:textSize="12sp"
+                tools:text="这是哪里呢？" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            tools:src="@mipmap/shop_white_arrow" />
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/bt_attention"
+            android:layout_width="76dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="+ 关注"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"
+            app:qmui_backgroundColor="@color/yellow_FECC32"
+            app:qmui_borderWidth="0px"
+            app:qmui_radius="250dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginEnd="@dimen/space"
+        android:background="@color/grey_E6E6E6" />
+
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableStart="@mipmap/group_add"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space"
+        android:text="发起群聊"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/grey_F7F7F7" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="置顶聊天"
+            android:textSize="16sp" />
+
+
+        <Switch
+            android:id="@+id/s_top"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/shape_switch_thumb"
+            android:track="@drawable/selector_switch_bg" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/grey_F7F7F7" />
+
+    <RelativeLayout
+        android:id="@+id/rl_black"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="加入黑名单"
+            android:textSize="16sp" />
+
+
+        <Switch
+            android:id="@+id/s_black"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:enabled="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/shape_switch_thumb"
+            android:track="@drawable/selector_switch_bg" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginEnd="@dimen/space"
+        android:background="@color/grey_E6E6E6" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_report"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="举报"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            tools:src="@mipmap/shop_white_arrow" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/grey_F7F7F7" />
+
+
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space"
+        android:text="清空聊天内容"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_F7F7F7" />
+
+
+</LinearLayout>

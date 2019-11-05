@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/frame_white_color"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/space"
+    android:paddingTop="@dimen/space"
+    android:paddingEnd="@dimen/space">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            tools:src="@mipmap/my_default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextViewTheme"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/iv_head"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="遛遛六" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/TextViewTheme"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/iv_head"
+            android:textColor="@color/grey_999"
+            android:textSize="14sp"
+            tools:text="遛遛六" />
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/bt_attention"
+            android:layout_width="76dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="+ 关注"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"
+            app:qmui_backgroundColor="@color/yellow_FECC32"
+            app:qmui_borderWidth="0px"
+            app:qmui_radius="250dp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="56dp"
+        android:background="@color/lineColor" />
+</LinearLayout>

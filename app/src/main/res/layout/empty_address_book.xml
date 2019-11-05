@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="100dp"
+
+        android:src="@mipmap/address_book" />
+
+    <TextView
+        style="@style/TextViewTheme"
+        android:layout_marginTop="32dp"
+        android:text="匹配手机通讯录"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/TextViewTheme"
+        android:layout_width="290dp"
+        android:layout_marginTop="12dp"
+        android:text="查看通讯录好友，在手机设置里开启通讯录权限，看看哪些联系人在玩魔团。"
+        android:textColor="@color/minorTextColor"
+        android:textSize="16sp" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/bt_find"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="查找通讯录好友"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:qmui_backgroundColor="@color/yellow_FECC32"
+        app:qmui_borderWidth="0px"
+        app:qmui_radius="150dp" />
+
+
+</LinearLayout>

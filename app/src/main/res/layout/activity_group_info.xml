@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/frame_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/frame_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableEnd="@mipmap/shop_white_arrow"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="12dp"
+        android:text="查看更多群成员"
+        android:textColor="@color/grey_999"
+        android:textSize="13sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/grey_F7F7F7" />
+
+    <RelativeLayout
+        android:id="@+id/rl_groupName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="群聊名称"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            tools:src="@mipmap/shop_white_arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginEnd="@dimen/space"
+        android:background="@color/grey_E6E6E6" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_myName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="我在本群昵称"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            tools:src="@mipmap/shop_white_arrow" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/grey_F7F7F7" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="置顶聊天"
+            android:textSize="16sp" />
+
+
+        <Switch
+            android:id="@+id/s_top"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/shape_switch_thumb"
+            android:track="@drawable/selector_switch_bg" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginEnd="@dimen/space"
+        android:background="@color/grey_E6E6E6" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_report"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="举报"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            tools:src="@mipmap/shop_white_arrow" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_F7F7F7" />
+
+</LinearLayout>

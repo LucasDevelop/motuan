@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.futrue.huomai"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        buildConfigField 'String', 'WX_APP_ID', '"wx0d373729d606b51e"'
+        buildConfigField 'String', 'WX_APP_SECRET', '"06d0a9b000683255f7c0cca3c9f44227"'
+
+    }
+    signingConfigs {
+        release {
+            keyAlias 'huomai'
+            keyPassword 'huomai123456'
+            storeFile file('huomai.jks')
+            storePassword 'huomai123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(':frame')
+    kapt 'com.google.dagger:dagger-android-processor:2.19'
+    kapt 'com.google.dagger:dagger-compiler:2.19'
+    implementation 'com.ycjiang:ImagePreview:2.2.3'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.4.0'
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'//
+    implementation 'com.github.mcxtzhang:SuspensionIndexBar:V1.0.0'
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    implementation 'com.ycjiang:ImagePreview:2.2.3'
+    implementation 'com.contrarywind:Android-PickerView:4.1.8'
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="121dp"
+    android:background="@color/frame_white_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_prise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/iv_prise"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:src="@mipmap/message_prise" />
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_below="@id/iv_prise"
+                android:layout_centerHorizontal="true"
+                android:text="赞"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_priseNum"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignTop="@id/iv_prise"
+                android:layout_alignEnd="@id/iv_prise"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_red_circle"
+                android:gravity="center"
+                android:textColor="@color/frame_white_color"
+                android:textSize="10sp"
+                tools:text="1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fens"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/iv_fens"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:src="@mipmap/message_fens" />
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_below="@id/iv_fens"
+                android:layout_centerHorizontal="true"
+                android:text="粉丝"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_fensNum"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignTop="@id/iv_fens"
+                android:layout_alignEnd="@id/iv_fens"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_red_circle"
+                android:gravity="center"
+                android:textColor="@color/frame_white_color"
+                android:textSize="10sp"
+                tools:text="1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/iv_comment"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:src="@mipmap/message_comment" />
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_below="@id/iv_comment"
+                android:layout_centerHorizontal="true"
+                android:text="评论"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_commentNum"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignTop="@id/iv_comment"
+                android:layout_alignEnd="@id/iv_comment"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_red_circle"
+                android:gravity="center"
+                android:text="赞"
+                android:textColor="@color/frame_white_color"
+                android:textSize="10sp"
+                tools:text="1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_private"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/iv_private"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:src="@mipmap/message_private" />
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:layout_below="@id/iv_private"
+                android:layout_centerHorizontal="true"
+                android:text="私信"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignTop="@id/iv_private"
+                android:layout_alignEnd="@id/iv_private"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_red_circle"
+                android:gravity="center"
+                android:textColor="@color/frame_white_color"
+                android:textSize="10sp"
+                android:visibility="gone"
+                tools:text="1" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+</LinearLayout>

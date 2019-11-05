@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F7F7F7"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/frame_toolbar" />
+
+    <TextView
+        style="@style/TextViewTheme"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:text="请选择举报分类，分类越准，处理越快。"
+        android:textColor="@color/grey_999"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/frame_white_color"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="违规违法"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/check"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space"
+        android:background="@color/grey_E6E6E6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/frame_white_color"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="色情低俗"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/check"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space"
+        android:background="@color/grey_E6E6E6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/frame_white_color"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="辱骂我或他人"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/check"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space"
+        android:background="@color/grey_E6E6E6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/frame_white_color"
+        android:paddingStart="@dimen/space"
+        android:paddingEnd="@dimen/space">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:layout_centerVertical="true"
+            android:text="制售假冒伪劣商品"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/check"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

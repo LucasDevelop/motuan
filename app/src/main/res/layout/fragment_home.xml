@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:padding="10dp"
+            android:src="@mipmap/home_search" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:id="@+id/fl_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:padding="10dp">
+
+
+
+                <View
+                    android:id="@+id/v_hot"
+                    android:layout_width="40dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/yellow_FECC32" />
+
+                <TextView
+                    android:id="@+id/v_hot_text"
+                    style="@style/TextViewTheme"
+                    android:text="热门"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/grey_E0E0E0" />
+
+            <FrameLayout
+                android:id="@+id/fl_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+
+
+                <View
+                    android:id="@+id/v_attention"
+                    android:layout_width="40dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:visibility="invisible"
+                    android:background="@color/yellow_FECC32" />
+                <TextView
+                    android:id="@+id/v_follow_text"
+                    style="@style/TextViewTheme"
+                    android:text="关注"
+                    android:textColor="@color/gray_text"
+                    android:layout_gravity="center"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

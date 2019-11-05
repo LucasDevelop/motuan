@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_personal_details">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:id="@+id/fl_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="7dp"
+            android:padding="10dp">
+
+
+            <View
+                android:id="@+id/v_video"
+                android:layout_width="80dp"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:background="@color/yellow_FECC32" />
+
+            <TextView
+                android:id="@+id/tv_videoNum"
+                style="@style/TextViewTheme"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                tools:text="视频 365" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+
+            <View
+                android:id="@+id/v_look"
+                android:layout_width="80dp"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:background="@color/yellow_FECC32"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_lookNum"
+                style="@style/TextViewTheme"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                tools:text="看看 365" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

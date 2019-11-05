@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/frame_AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:toolbarId="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/frame_white_color"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_label"
+                        style="@style/TextViewTheme"
+                        android:layout_marginTop="6dp"
+                        android:textSize="21sp"
+                        tools:text="越努力越幸运" />
+
+                    <TextView
+                        android:id="@+id/tv_lookNum"
+                        style="@style/TextViewTheme"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_999"
+                        android:textSize="11sp"
+                        tools:text="2.1万条看看" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="31dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:src="@mipmap/frame_ic_back" />
+
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                    android:id="@+id/bt_write"
+                    android:layout_width="80dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="12dp"
+                    android:drawableStart="@mipmap/write"
+                    android:paddingStart="10dp"
+                    android:text="写看看"
+                    android:textColor="@color/textColor"
+                    android:textSize="13sp"
+                    app:qmui_backgroundColor="@color/yellow_FECC32"
+                    app:qmui_borderWidth="0px"
+                    app:qmui_radius="25dp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/frame_white_color"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/toolbar_not_space">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_toolBack"
+                        android:layout_width="31dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:padding="10dp"
+                        android:src="@mipmap/frame_ic_back" />
+
+                    <TextView
+                        android:id="@+id/tv_toolName"
+                        style="@style/TextViewTheme"
+                        android:layout_centerInParent="true"
+                        android:textSize="18sp"
+                        tools:text="越努力越幸运" />
+
+
+                    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                        android:id="@+id/bt_toolWrite"
+                        android:layout_width="80dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:drawableStart="@mipmap/write"
+                        android:paddingStart="10dp"
+                        android:text="写看看"
+                        android:textColor="@color/textColor"
+                        android:textSize="13sp"
+                        app:qmui_backgroundColor="@color/yellow_FECC32"
+                        app:qmui_borderWidth="0px"
+                        app:qmui_radius="25dp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <!--    <include layout="@layout/content_scrolling" />-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/frame_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_F7F7F7" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

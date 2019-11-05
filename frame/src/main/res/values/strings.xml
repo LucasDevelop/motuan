@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="frame_load_empty">空空如也</string>
+    <string name="frame_view_net_error">当前网络环境较差请重新加载</string>
+    <string name="frame_load_again">重新加载</string>
+    <string name="frame_view_no_data">亲，暂时没有相关数据</string>
+    <string name="frame_cancel">取消</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+</resources>

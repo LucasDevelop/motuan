@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.futrue.huomai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".temp.TempActivity"></activity>
+        <activity android:name=".main.my.setting.SettingActivity" />
+        <activity android:name=".main.my.usercenter.intro.IntroActivity" />
+        <activity android:name=".main.my.usercenter.settext.SetTextActivity" />
+        <activity android:name=".main.my.usercenter.userhead.UserHeadActivity" />
+        <activity android:name=".main.my.usercenter.UserCenterActivity" />
+        <activity android:name=".main.my.findfirend.FindFirendActivity" />
+        <activity android:name=".main.my.video.MyVideoFragment" />
+        <activity android:name=".main.message.chat.report.ReportActivity" />
+        <activity android:name=".main.message.chat.groupinfo.changename.ChangeNameActivity" />
+        <activity android:name=".main.message.chat.groupinfo.GroupInfoActivity" />
+        <activity android:name=".main.message.chat.privateinfo.PrivateInfoActivity" />
+        <activity android:name=".main.message.chat.ChatActivity" />
+        <activity android:name=".main.message.selectgroup.SelectGroupActivity" />
+        <activity android:name=".main.message.groupadd.GroupAddActivity" />
+        <activity android:name=".main.message.prviateadd.PrviateAddActivity" />
+        <activity android:name=".main.message.prviatelist.PrviateListActivity" />
+        <activity android:name=".main.message.commentlist.CommentListActivity" />
+        <activity android:name=".main.message.fenslist.FensListActivity" />
+        <activity android:name=".main.message.priselist.PriseListActivity" />
+        <activity android:name=".main.look.write.selectlocation.SelectLocationActivity" />
+        <activity android:name=".main.look.write.selectgoods.SelectGoodsActivity" />
+        <activity android:name=".main.look.write.selectlabel.SelectLabelActivity" />
+        <activity android:name=".main.look.write.WriteActivity" />
+        <activity android:name=".main.look.label.LabelActivity" />
+        <activity android:name=".main.look.detail.praiselist.PraiseListActivity" />
+        <activity android:name=".main.look.detail.LookDetailActivity" />
+        <activity android:name=".main.home.search.SearchActivity" />
+        <activity android:name=".main.home.shop.dynamic.ShopDynamicActivity" />
+        <activity android:name=".main.home.shop.ShopActivity" />
+        <activity android:name=".main.home.personaldetails.PersonalDetailsActivity" />
+        <activity android:name=".main.look.friendlist.FriendListActivity" />
+        <activity android:name=".main.home.video.VideoPlayerActivity" />
+        <activity
+            android:name=".main.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="net.sourceforge.simcpux"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx0d373729d606b51e" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

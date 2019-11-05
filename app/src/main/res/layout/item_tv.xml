@@ -1,0 +1,20 @@
+<com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="16dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:paddingBottom="6dp"
+    android:layout_marginBottom="15dp"
+    android:textColor="@color/textColor"
+    android:textSize="13sp"
+    app:qmui_backgroundColor="@color/grey_F7F7F7"
+    app:qmui_borderWidth="0dp"
+    app:qmui_radius="150dp"
+    tools:text="Helloworld">
+
+</com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton>

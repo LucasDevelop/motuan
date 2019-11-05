@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF742B</color>
+
+    <!--字体显示颜色-->
+    <color name="frame_text_color">#333333</color>
+
+    <color name="frame_title_color">#181818</color>
+
+    <!--白色-->
+    <color name="frame_white_color">#FFFFFF</color>
+    <color name="frame_black_color">#000</color>
+
+    <!--白色-->
+
+    <!--按钮本身的颜色-->
+    <color name="frame_btn_color">#ff9700</color>
+    <!--灰色字体颜色-->
+    <color name="frame_text_hint_color">#999999</color>
+
+    <!--淡黄色-->
+    <color name="frame_light_yellow_color">#ffa654</color>
+
+    <color name="frame_line_color">#F5F5F5</color>
+
+    <color name="frame_text_yellow_color">#ffa500</color>
+
+    <color name="frame_layout_pressed_color">#d9d9d9</color>
+
+    <color name="frame_main_tab_color">#E31B19</color>
+
+    <color name="frame_transparent">#00000000</color>
+</resources>

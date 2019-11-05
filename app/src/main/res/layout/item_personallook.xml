@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv_year"
+        style="@style/TextViewTheme"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        tools:text="2016" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_day"
+            style="@style/TextViewTheme"
+            android:textSize="20sp"
+            tools:text="12" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            style="@style/TextViewTheme"
+            tools:text="/12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/TextViewTheme"
+                android:lineSpacingExtra="2dp"
+                android:textSize="16sp"
+                tools:text="小罐茶功夫套装骨瓷茶具套组,体验升乐茶香。综合借鉴传统茶具，造型精髓，在此基础上加以改造，使茶具更简单，间接优雅，品味非凡。厚薄均匀的哑光蔓延茶具，彰显..." />
+
+            <TextView
+                android:id="@+id/tv_more"
+                style="@style/TextViewTheme"
+                android:layout_marginTop="8dp"
+                android:text="更多"
+                android:textColor="@color/blue_57578F"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    tools:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    tools:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/iv_3"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    tools:src="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_4"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    tools:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/iv_5"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    tools:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/iv_6"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    tools:src="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_7"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    tools:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/iv_8"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    tools:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/iv_9"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    tools:src="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_goods"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_personal_goods_bg"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_goodsCover"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/iv_goodsCover"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_goodsTitle"
+                        style="@style/TextViewTheme"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/minorTextColor"
+                        android:textSize="15sp"
+                        tools:text="小罐茶茶具茶水分离杯" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsMoney"
+                        style="@style/TextViewTheme"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        tools:text="￥ 1280" />
+
+
+                    <TextView
+                        android:id="@+id/tv_num"
+                        style="@style/TextViewTheme"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/grey_999"
+                        android:textSize="12sp"
+                        tools:text="人已跟随购买" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                    android:id="@+id/bt_messageLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:drawableStart="@mipmap/comment_messahe"
+                    android:drawablePadding="4dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="@color/minorTextColor"
+                    android:textSize="12sp"
+                    app:qmui_backgroundColor="@color/grey_F6F6F6"
+                    app:qmui_borderWidth="0px"
+                    app:qmui_radius="4dp"
+                    tools:text="越努力越幸运" />
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                    android:id="@+id/bt_locationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="12dp"
+                    android:drawableStart="@mipmap/comment_location"
+                    android:drawablePadding="4dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="@color/minorTextColor"
+                    android:textSize="12sp"
+                    app:qmui_backgroundColor="@color/grey_F6F6F6"
+                    app:qmui_borderWidth="0px"
+                    app:qmui_radius="4dp"
+                    tools:text="重庆解放碑" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_personal_goods_bg"
+                android:paddingStart="10dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_hot"
+                    android:layout_width="43dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/comment_hot" />
+
+                <TextView
+                    android:id="@+id/tv_praiseNum"
+                    style="@style/TextViewTheme"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/grey_999"
+                    android:textSize="12sp"
+                    tools:text="102赞" />
+
+                <TextView
+                    android:id="@+id/tv_commentContent"
+                    style="@style/TextViewTheme"
+                    android:layout_marginTop="26dp"
+                    android:textColor="@color/minorTextColor"
+                    android:textSize="15sp"
+                    tools:text="小罐茶茶具茶水分离杯" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    style="@style/TextViewTheme"
+                    android:drawableStart="@mipmap/comment_share"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey_999"
+                    android:textSize="12sp"
+                    android:text="分享" />
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    style="@style/TextViewTheme"
+                    android:layout_centerHorizontal="true"
+                    android:drawableStart="@mipmap/comment"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey_999"
+                    android:textSize="12sp"
+                    tools:text="102赞" />
+
+                <TextView
+                    android:id="@+id/tv_praise"
+                    style="@style/TextViewTheme"
+                    android:layout_alignParentEnd="true"
+                    android:drawableStart="@mipmap/comment_praise"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey_999"
+                    android:textSize="12sp"
+                    tools:text="102赞" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/TextViewTheme"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/grey_999"
+                android:textSize="11sp"
+                tools:text="15:21" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/grey_E6E6E6" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

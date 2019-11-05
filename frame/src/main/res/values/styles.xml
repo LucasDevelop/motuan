@@ -1,0 +1,45 @@
+<resources>
+
+
+
+    <style name="frame_AppTheme" parent="QMUI.Compat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/frame_btn_color</item>
+        <item name="colorAccent">@color/frame_btn_color</item>
+        <item name="android:windowBackground">@color/frame_white_color</item>
+    </style>
+
+    <style name="frame_AppTheme_No_Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="frame_tool_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:background">@color/frame_white_color</item>
+        <item name="android:id">@id/frame_toolbar</item>
+    </style>
+
+    <!-- 自定义Dialog -->
+    <style name="frame_Custom_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="frame_line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@color/frame_line_color</item>
+    </style>
+
+    <!--底部popup动画的style-->
+
+    <!--number_progress-->
+
+</resources>

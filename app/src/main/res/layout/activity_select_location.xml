@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/frame_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_E6E6E6" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_search_bg"
+        android:drawableStart="@mipmap/search_et"
+        android:drawablePadding="12dp"
+        android:hint="请输入搜索关键词"
+        android:paddingStart="12dp"
+        android:textColor="@color/textColor"
+        android:textSize="13dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginEnd="@dimen/space"
+        android:background="@color/grey_E6E6E6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space"
+        android:text="不显示地理位置"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginEnd="@dimen/space"
+        android:background="@color/grey_E6E6E6" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/frame_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
