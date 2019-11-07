@@ -35,7 +35,8 @@ class VideoPlayerAdapter @Inject constructor() :
                 R.id.iv_share,
                 R.id.fl_user,
                 R.id.v_icon_view,
-                R.id.tv_location
+                R.id.tv_location,
+                R.id.tv_content
             )
         }
     }

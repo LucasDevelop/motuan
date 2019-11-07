@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/yellow_FECC32"
+        android:visibility="invisible" />
+
+    <TextView
+        style="@style/TextViewTheme"
+        android:layout_gravity="center"
+        android:text="最新"
+        android:textColor="@color/gray_text"
+        android:textSize="18sp" />
+
+</FrameLayout>

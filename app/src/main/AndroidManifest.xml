@@ -7,7 +7,10 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".App"
@@ -19,8 +22,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <meta-data android:name="com.amap.api.v2.apikey" android:value="081105ba7e376799e883f8151dfea2ca"/>
-        <activity android:name=".main.home.video.location.LocationActivity"></activity>
+        <activity android:name=".main.home.video.topic.TopicInfoActivity"></activity>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="081105ba7e376799e883f8151dfea2ca" />
+
+        <activity android:name=".main.home.video.location.LocationActivity" />
         <activity android:name=".main.home.video.videolist.VideoListActivity" />
         <activity android:name=".main.my.setting.SettingActivity" />
         <activity android:name=".main.my.usercenter.intro.IntroActivity" />

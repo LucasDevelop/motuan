@@ -26,22 +26,89 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp">
+                    android:layout_height="wrap_content">
 
                     <com.amap.api.maps.MapView
                         android:id="@+id/v_map"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/status_h"
+                        android:paddingTop="3dp">
+
+                        <ImageView
+                            android:id="@+id/v_back1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="13dp"
+                            android:src="@mipmap/ic_back_white" />
+
+                        <ImageView
+                            android:id="@+id/v_share1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/ic_share_white" />
+                    </RelativeLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/status_h">
+                        android:layout_marginTop="150dp"
+                        android:background="@drawable/shape_white_rtlr_c8"
+                        android:orientation="vertical"
+                        android:padding="12dp">
 
-                        <ImageView
+                        <TextView
+                            android:id="@+id/v_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@mipmap/ic_back_white" />
+                            android:text="重庆来福士广场"
+                            android:textColor="#ff333333"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/v_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="2.1万人来过"
+                            android:textColor="#ff999999"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="距离358km"
+                                android:textColor="#ff999999"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:background="@color/divide" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 重庆市渝中区朝天门街道陕西路9号"
+                                android:textColor="#ff999999"
+                                android:textSize="12sp" />
+                        </LinearLayout>
                     </LinearLayout>
                 </FrameLayout>
 
@@ -50,26 +117,52 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/status_h"
-                    android:background="#f00"
+                    android:visibility="gone"
                     app:layout_collapseMode="pin">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_back_white" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/v_back2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_back_black" />
+
+                        <TextView
+                            android:id="@+id/v_title"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="重庆来福士广场"
+                            android:textColor="#ff333333"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/v_share2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/ic_share_black" />
+                    </RelativeLayout>
                 </android.support.v7.widget.Toolbar>
             </android.support.design.widget.CollapsingToolbarLayout>
         </android.support.design.widget.AppBarLayout>
 
-        <android.support.v4.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<!--        <android.support.v4.widget.NestedScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
 
             <FrameLayout
                 android:id="@+id/v_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:background="@color/normal_bg"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-        </android.support.v4.widget.NestedScrollView>
+<!--        </android.support.v4.widget.NestedScrollView>-->
     </android.support.design.widget.CoordinatorLayout>
 </FrameLayout>

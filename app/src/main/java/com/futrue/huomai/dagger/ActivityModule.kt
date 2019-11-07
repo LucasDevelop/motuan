@@ -8,6 +8,7 @@ import com.futrue.huomai.main.home.shop.ShopActivity
 import com.futrue.huomai.main.home.shop.dynamic.ShopDynamicActivity
 import com.futrue.huomai.main.home.video.VideoPlayerActivity
 import com.futrue.huomai.main.home.video.location.LocationActivity
+import com.futrue.huomai.main.home.video.topic.TopicInfoActivity
 import com.futrue.huomai.main.home.video.videolist.VideoListActivity
 import com.futrue.huomai.main.look.detail.LookDetailActivity
 import com.futrue.huomai.main.look.detail.praiselist.PraiseListActivity
@@ -147,5 +148,8 @@ abstract class ActivityModule {
 
     @ContributesAndroidInjector
     abstract fun injectLocationActivity(): LocationActivity
+
+    @ContributesAndroidInjector
+    abstract fun injectTopicInfoActivity(): TopicInfoActivity
 
 }

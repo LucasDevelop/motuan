@@ -14,6 +14,7 @@ import com.futrue.frame.data.bean.IBean
 import com.futrue.huomai.R
 import com.futrue.huomai.main.home.personaldetails.PersonalDetailsActivity
 import com.futrue.huomai.main.home.video.location.LocationActivity
+import com.futrue.huomai.main.home.video.topic.TopicInfoActivity
 import com.futrue.huomai.main.home.video.videolist.VideoListActivity
 import com.futrue.huomai.main.look.friendlist.FriendListActivity
 import com.futrue.huomai.utils.GlideUtil
@@ -97,6 +98,9 @@ class VideoPlayerActivity :
                 }
                 R.id.tv_location -> {//定位
                     LocationActivity.launch(this, LocationActivity.TYPE_VIDEO)
+                }
+                R.id.tv_content->{//话题
+                    TopicInfoActivity.launch(this,TopicInfoActivity.TYPE_VIDEO)
                 }
             }
         }
