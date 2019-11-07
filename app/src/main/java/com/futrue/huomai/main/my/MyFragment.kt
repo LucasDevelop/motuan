@@ -24,6 +24,7 @@ import kotlinx.android.synthetic.main.content_scrolling.tv_lookNum
 import kotlinx.android.synthetic.main.content_scrolling.tv_videoNum
 import kotlinx.android.synthetic.main.fragment_my.*
 import org.devio.takephoto.model.TResult
+
 /**
  * @package    MyFragment.kt
  * @author     luan
@@ -79,6 +80,20 @@ class MyFragment : BaseNetFragment<MyPresenter>(), View.OnClickListener {
             hide(mMyPriaseFragment!!)
             commit()
         }
+        changeStatus()
+    }
+
+    var isShop = true
+
+    //更新状态
+    private fun changeStatus() {
+        if (isShop){//有店铺
+            rl_shop.showView()
+            v_no_shop.hideView()
+        }else{
+            rl_shop.hideView()
+            v_no_shop.showView()
+        }
     }
 
     override fun initData() {
@@ -109,7 +124,7 @@ class MyFragment : BaseNetFragment<MyPresenter>(), View.OnClickListener {
     override fun initEvent() {
         arrayOf(
             bt_editor, iv_setting, iv_share, rl_findfirend, rl_toolFindfirend, iv_toolbarShare,
-            rl_video, rl_look, rl_private, rl_praise, rl_shop, rl_assistant, bt_setCover
+            rl_video, rl_look, rl_private, rl_praise, rl_shop, rl_assistant, bt_setCover, v_shop
         ).setOnClickListener(this)
         appBarLayout.addOnOffsetChangedListener(object : AppBarScrollingStatusChangeListener() {
             override fun onScrollStatusChange(state: CollapsingToolbarLayoutState?) {
@@ -133,6 +148,9 @@ class MyFragment : BaseNetFragment<MyPresenter>(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v) {
+            v_shop -> {
+
+            }
             bt_editor -> {
                 UserCenterActivity.launch(mActivity)
             }

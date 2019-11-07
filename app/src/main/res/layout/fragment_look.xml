@@ -44,6 +44,7 @@
                     android:background="@color/yellow_FECC32" />
 
                 <TextView
+                    android:id="@+id/v_recommend_text"
                     style="@style/TextViewTheme"
                     android:text="推荐"
                     android:layout_gravity="center"
@@ -74,6 +75,7 @@
                     android:visibility="invisible"
                     android:background="@color/yellow_FECC32" />
                 <TextView
+                    android:id="@+id/v_attention_text"
                     style="@style/TextViewTheme"
                     android:text="关注"
                     android:layout_gravity="center"

@@ -1,5 +1,6 @@
 package com.futrue.huomai.main.look
 
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.View
 import com.futrue.frame.base.fragment.BaseNetFragment
@@ -8,15 +9,14 @@ import com.futrue.frame.data.bean.IBean
 import com.futrue.huomai.R
 import com.futrue.huomai.main.home.search.SearchActivity
 import com.futrue.huomai.main.look.attention.LookAttentionFragment
-import com.futrue.huomai.main.look.recommend.RecommendFragment
+import com.futrue.huomai.main.look.recommend.DynamicFragment
 import com.futrue.huomai.main.look.write.WriteActivity
 import kotlinx.android.synthetic.main.fragment_look.*
 
 class LookFragment : BaseNetFragment<LookPresenter>(), View.OnClickListener {
 
 
-
-    private val mRecommendFragment = RecommendFragment()
+    private val mRecommendFragment = DynamicFragment.getNewInstance(DynamicFragment.TYPE_RECOMMEND)
     private val mLookAttentionFragment = LookAttentionFragment()
 
 
@@ -51,6 +51,14 @@ class LookFragment : BaseNetFragment<LookPresenter>(), View.OnClickListener {
                         .show(mLookAttentionFragment)
                         .commit()
                 }
+                v_recommend_text.apply {
+                    typeface = Typeface.defaultFromStyle(Typeface.NORMAL)
+                    setTextColor(resources.getColor(R.color.gray_text))
+                }
+                v_attention_text.apply {
+                    typeface = Typeface.defaultFromStyle(Typeface.BOLD)
+                    setTextColor(resources.getColor(R.color.textColor))
+                }
                 v_attention.visibility = View.VISIBLE
                 v_recommend.visibility = View.INVISIBLE
             }
@@ -60,7 +68,14 @@ class LookFragment : BaseNetFragment<LookPresenter>(), View.OnClickListener {
                         .show(mRecommendFragment)
                         .commit()
                 }
-
+                v_attention_text.apply {
+                    typeface = Typeface.defaultFromStyle(Typeface.NORMAL)
+                    setTextColor(resources.getColor(R.color.gray_text))
+                }
+                v_recommend_text.apply {
+                    typeface = Typeface.defaultFromStyle(Typeface.BOLD)
+                    setTextColor(resources.getColor(R.color.textColor))
+                }
                 v_attention.visibility = View.INVISIBLE
                 v_recommend.visibility = View.VISIBLE
             }

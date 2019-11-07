@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/v_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@mipmap/my_default_avatar" />
+
+            <ImageView
+                android:id="@+id/vv_vip"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_gravity="bottom|right"
+                android:src="@mipmap/v" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextViewTheme"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/v_tag1"
+            android:textSize="16sp"
+            android:text="遛遛六" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/TextViewTheme"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/v_tag1"
+            android:textColor="@color/grey_999"
+            android:textSize="11sp"
+            android:text="11小时前发布" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/v_follow"
+            android:layout_width="63dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"
+            app:qmui_backgroundColor="@color/yellow_FECC32"
+            app:qmui_borderWidth="0dp"
+            app:qmui_radius="25dp"
+            android:text="+ 关注" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/TextViewTheme"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="2dp"
+        android:textSize="16sp"
+        android:text="小罐茶功夫套装骨瓷茶具套组,体验升乐茶香。综合借鉴传统茶具，造型精髓，在此基础上加以改造，使茶具更简单，间接优雅，品味非凡。厚薄均匀的哑光蔓延茶具，彰显..." />
+
+    <TextView
+        android:id="@+id/tv_more"
+        style="@style/TextViewTheme"
+        android:layout_marginTop="8dp"
+        android:text="更多"
+        android:textColor="@color/blue_57578F"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/v_img_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_goods"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_personal_goods_bg"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageView
+            android:id="@+id/iv_goodsCover"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/iv_goodsCover"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_goodsTitle"
+                style="@style/TextViewTheme"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/minorTextColor"
+                android:textSize="15sp"
+                android:text="小罐茶茶具茶水分离杯" />
+
+            <TextView
+                android:id="@+id/tv_goodsMoney"
+                style="@style/TextViewTheme"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="15sp"
+                android:text="￥ 1280" />
+
+
+            <TextView
+                android:id="@+id/tv_num"
+                style="@style/TextViewTheme"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/grey_999"
+                android:textSize="12sp"
+                android:text="人已跟随购买" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

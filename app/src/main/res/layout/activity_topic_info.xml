@@ -98,7 +98,21 @@
                             android:textSize="21sp"
                             android:textStyle="bold"
                             android:visibility="gone" />
-
+                        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                            android:id="@+id/v_toolWrite"
+                            android:layout_width="80dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dp"
+                            android:drawableStart="@mipmap/write"
+                            android:paddingStart="10dp"
+                            android:text="写看看"
+                            android:textColor="@color/textColor"
+                            android:textSize="13sp"
+                            app:qmui_backgroundColor="@color/yellow_FECC32"
+                            app:qmui_borderWidth="0px"
+                            app:qmui_radius="25dp" />
                         <ImageView
                             android:id="@+id/v_share"
                             android:layout_width="wrap_content"

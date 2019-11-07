@@ -137,5 +137,29 @@
 
     </RelativeLayout>
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frame_white_color">
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/v_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="4dp"
+            android:text="举报"
+            android:textColor="@color/frame_title_color"
+            android:textSize="16sp"
+            app:qmui_backgroundColor="#FADC80"
+            app:qmui_borderWidth="0dp"
+            app:qmui_radius="100dp" />
+    </FrameLayout>
 </LinearLayout>

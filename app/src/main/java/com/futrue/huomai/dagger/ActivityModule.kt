@@ -12,12 +12,14 @@ import com.futrue.huomai.main.home.video.topic.TopicInfoActivity
 import com.futrue.huomai.main.home.video.videolist.VideoListActivity
 import com.futrue.huomai.main.look.detail.LookDetailActivity
 import com.futrue.huomai.main.look.detail.praiselist.PraiseListActivity
+import com.futrue.huomai.main.look.detail.scaleimage.ScaleImageActivity
 import com.futrue.huomai.main.look.friendlist.FriendListActivity
 import com.futrue.huomai.main.look.label.LabelActivity
 import com.futrue.huomai.main.look.write.WriteActivity
 import com.futrue.huomai.main.look.write.selectgoods.SelectGoodsActivity
 import com.futrue.huomai.main.look.write.selectlabel.SelectLabelActivity
 import com.futrue.huomai.main.look.write.selectlocation.SelectLocationActivity
+import com.futrue.huomai.main.message.activitymsg.ActivityMsgActivity
 import com.futrue.huomai.main.message.chat.ChatActivity
 import com.futrue.huomai.main.message.chat.groupinfo.GroupInfoActivity
 import com.futrue.huomai.main.message.chat.groupinfo.changename.ChangeNameActivity
@@ -30,6 +32,7 @@ import com.futrue.huomai.main.message.priselist.PriseListActivity
 import com.futrue.huomai.main.message.prviateadd.PrviateAddActivity
 import com.futrue.huomai.main.message.prviatelist.PrviateListActivity
 import com.futrue.huomai.main.message.selectgroup.SelectGroupActivity
+import com.futrue.huomai.main.message.systemmsg.SystemMsgActivity
 import com.futrue.huomai.main.my.findfirend.FindFirendActivity
 import com.futrue.huomai.main.my.setting.SettingActivity
 import com.futrue.huomai.main.my.usercenter.UserCenterActivity
@@ -151,5 +154,14 @@ abstract class ActivityModule {
 
     @ContributesAndroidInjector
     abstract fun injectTopicInfoActivity(): TopicInfoActivity
+
+    @ContributesAndroidInjector
+    abstract fun injectScaleImageActivity(): ScaleImageActivity
+
+    @ContributesAndroidInjector
+    abstract fun injectSystemMsgActivity(): SystemMsgActivity
+
+    @ContributesAndroidInjector
+    abstract fun injectActivityMsgActivity(): ActivityMsgActivity
 
 }

@@ -60,15 +60,22 @@
                                 android:layout_height="match_parent"
                                 tools:src="@mipmap/ic_launcher" />
 
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="right|bottom"
+                                android:src="@mipmap/v" />
                         </FrameLayout>
 
                         <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
                             android:id="@+id/bt_editor"
                             android:layout_width="151dp"
                             android:layout_height="32dp"
-                            android:layout_gravity="bottom"
+                            android:layout_gravity="center_vertical"
                             android:layout_marginStart="20dp"
-                            android:layout_marginBottom="14dp"
+                            android:drawableLeft="@mipmap/ic_icon13"
+                            android:drawablePadding="-20dp"
+                            android:paddingLeft="35dp"
                             android:text="编辑资料"
                             android:textColor="@color/textColor"
                             android:textSize="16sp"
@@ -77,7 +84,13 @@
                             app:qmui_borderWidth="1dp"
                             app:qmui_radius="25dp" />
 
-
+                        <ImageView
+                            android:id="@+id/v_shop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="38dp"
+                            android:src="@mipmap/ic_icon12" />
                     </LinearLayout>
 
 
@@ -304,6 +317,50 @@
                     android:background="@color/grey_F7F7F7" />
 
                 <RelativeLayout
+                    android:id="@+id/v_no_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/v_shop_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/ic_icon16" />
+
+                    <TextView
+                        android:id="@+id/v_tag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/v_shop_icon"
+                        android:text="开通魔团小店享更多权益"
+                        android:textColor="#ff333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/v_tag1"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@id/v_shop_icon"
+                        android:text="省钱赚钱两不误"
+                        android:textColor="#ff999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:drawablePadding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@mipmap/ic_icon15"
+                        android:text="立即开通"
+                        android:textColor="#fffecc32"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:id="@+id/rl_shop"
                     android:layout_width="match_parent"
                     android:layout_height="73dp"
@@ -319,10 +376,11 @@
                         android:paddingEnd="12dp">
 
                         <ImageView
-                            android:layout_width="13dp"
-                            android:layout_height="12dp"
+                            android:id="@+id/v_author_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:src="@mipmap/shop_v" />
+                            android:src="@mipmap/ic_icon14" />
 
                         <TextView
                             android:id="@+id/tv_goodsName"
@@ -429,10 +487,10 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
+                android:visibility="gone"
                 app:contentInsetLeft="0dp"
                 app:contentInsetStart="0dp"
                 app:layout_collapseMode="pin"
-                android:visibility="gone"
                 app:popupTheme="@style/toolbar_not_space">
 
                 <LinearLayout
@@ -454,7 +512,6 @@
                             android:layout_marginStart="2dp"
                             android:padding="10dp"
                             android:src="@mipmap/my_toolsetting" />
-
 
 
                         <ImageView

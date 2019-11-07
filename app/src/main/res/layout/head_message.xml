@@ -111,7 +111,6 @@
                 android:text="评论"
                 android:textSize="14sp" />
 
-
             <TextView
                 android:id="@+id/tv_commentNum"
                 android:layout_width="16dp"
@@ -148,7 +147,7 @@
                 style="@style/TextViewTheme"
                 android:layout_below="@id/iv_private"
                 android:layout_centerHorizontal="true"
-                android:text="私信"
+                android:text="连麦"
                 android:textSize="14sp" />
 
 
@@ -169,8 +168,8 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/grey_E6E6E6" />
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/grey_E6E6E6" />-->
 </LinearLayout>

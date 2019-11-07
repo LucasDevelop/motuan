@@ -22,7 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".main.home.video.topic.TopicInfoActivity"></activity>
+        <activity android:name=".main.message.activitymsg.ActivityMsgActivity"></activity>
+        <activity android:name=".main.message.systemmsg.SystemMsgActivity" />
+        <activity android:name=".main.home.video.topic.TopicInfoActivity" />
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
@@ -90,6 +92,7 @@
                 <data android:scheme="wx0d373729d606b51e" />
             </intent-filter>
         </activity>
+        <activity android:name=".main.look.detail.scaleimage.ScaleImageActivity" />
     </application>
 
 </manifest>

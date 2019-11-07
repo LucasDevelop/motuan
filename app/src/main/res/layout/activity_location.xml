@@ -46,6 +46,22 @@
                             android:padding="13dp"
                             android:src="@mipmap/ic_back_white" />
 
+                        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                            android:id="@+id/v_toolWrite1"
+                            android:layout_width="80dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dp"
+                            android:drawableStart="@mipmap/write"
+                            android:paddingStart="10dp"
+                            android:text="写看看"
+                            android:textColor="@color/textColor"
+                            android:textSize="13sp"
+                            app:qmui_backgroundColor="@color/yellow_FECC32"
+                            app:qmui_borderWidth="0px"
+                            app:qmui_radius="25dp" />
+
                         <ImageView
                             android:id="@+id/v_share1"
                             android:layout_width="wrap_content"
@@ -132,13 +148,29 @@
 
                         <TextView
                             android:id="@+id/v_title"
-                            android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
                             android:text="重庆来福士广场"
                             android:textColor="#ff333333"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                            android:id="@+id/v_toolWrite2"
+                            android:layout_width="80dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dp"
+                            android:drawableStart="@mipmap/write"
+                            android:paddingStart="10dp"
+                            android:text="写看看"
+                            android:textColor="@color/textColor"
+                            android:textSize="13sp"
+                            app:qmui_backgroundColor="@color/yellow_FECC32"
+                            app:qmui_borderWidth="0px"
+                            app:qmui_radius="25dp" />
 
                         <ImageView
                             android:id="@+id/v_share2"
@@ -153,16 +185,16 @@
             </android.support.design.widget.CollapsingToolbarLayout>
         </android.support.design.widget.AppBarLayout>
 
-<!--        <android.support.v4.widget.NestedScrollView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
+        <!--        <android.support.v4.widget.NestedScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
 
-            <FrameLayout
-                android:id="@+id/v_content"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                android:background="@color/normal_bg"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-<!--        </android.support.v4.widget.NestedScrollView>-->
+        <FrameLayout
+            android:id="@+id/v_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/normal_bg"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <!--        </android.support.v4.widget.NestedScrollView>-->
     </android.support.design.widget.CoordinatorLayout>
 </FrameLayout>

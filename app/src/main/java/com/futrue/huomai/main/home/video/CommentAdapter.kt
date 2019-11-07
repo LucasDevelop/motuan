@@ -12,8 +12,9 @@ import com.futrue.huomai.R
 import com.futrue.huomai.utils.GlideUtil
 import com.futrue.huomai.utils.TimeUtil
 import com.futrue.huomai.widget.CommentChildView
+import javax.inject.Inject
 
-class CommentAdapter : BaseQuickAdapter<IBean, BaseViewHolder>(R.layout.item_comment),
+class CommentAdapter @Inject constructor(): BaseQuickAdapter<IBean, BaseViewHolder>(R.layout.item_comment),
     CommentHelper {
 
     override fun convert(helper: BaseViewHolder, item: IBean) {

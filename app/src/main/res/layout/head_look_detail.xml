@@ -7,238 +7,14 @@
     android:background="@color/frame_white_color"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp">
-
-        <ImageView
-            android:id="@+id/iv_head"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            tools:src="@mipmap/my_default_avatar" />
-
-        <TextView
-            android:id="@+id/tv_name"
-            style="@style/TextViewTheme"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="3dp"
-            android:layout_toEndOf="@id/iv_head"
-            android:textSize="16sp"
-            tools:text="遛遛六" />
-
-
-        <TextView
-            android:id="@+id/tv_time"
-            style="@style/TextViewTheme"
-            android:layout_below="@id/tv_name"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="2dp"
-            android:layout_toEndOf="@id/iv_head"
-            android:textColor="@color/grey_999"
-            android:textSize="11sp"
-            tools:text="遛遛六" />
-
-        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
-            android:id="@+id/bt_attention"
-            android:layout_width="63dp"
-            android:layout_height="24dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:textColor="@color/textColor"
-            android:textSize="13sp"
-            app:qmui_backgroundColor="@color/yellow_FECC32"
-            app:qmui_borderWidth="0dp"
-            app:qmui_radius="25dp"
-            tools:text="+ 关注" />
-
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/tv_content"
-        style="@style/TextViewTheme"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
-        android:lineSpacingExtra="2dp"
-        android:textSize="16sp"
-        tools:text="小罐茶功夫套装骨瓷茶具套组,体验升乐茶香。综合借鉴传统茶具，造型精髓，在此基础上加以改造，使茶具更简单，间接优雅，品味非凡。厚薄均匀的哑光蔓延茶具，彰显..." />
-
-
-    <LinearLayout
-        android:id="@+id/ll_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+    <FrameLayout
+        android:layout_marginRight="12dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:orientation="horizontal"
-        android:visibility="gone">
-
-        <ImageView
-            android:id="@+id/iv_1"
-            android:layout_width="0dp"
-            android:layout_height="94dp"
-            android:layout_weight="1"
-            android:visibility="invisible"
-            tools:src="@mipmap/ic_launcher" />
-
-        <ImageView
-            android:id="@+id/iv_2"
-            android:layout_width="0dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:visibility="invisible"
-            tools:src="@mipmap/ic_launcher" />
-
-        <ImageView
-            android:id="@+id/iv_3"
-            android:layout_width="0dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:visibility="invisible"
-            tools:src="@mipmap/ic_launcher" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll_2"
+        android:layout_marginLeft="12dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="12dp"
-        android:orientation="horizontal"
-        android:visibility="gone">
-
-        <ImageView
-            android:id="@+id/iv_4"
-            android:layout_width="0dp"
-            android:layout_height="94dp"
-            android:layout_weight="1"
-            android:visibility="invisible"
-            tools:src="@mipmap/ic_launcher" />
-
-        <ImageView
-            android:id="@+id/iv_5"
-            android:layout_width="0dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:visibility="invisible"
-            tools:src="@mipmap/ic_launcher" />
-
-        <ImageView
-            android:id="@+id/iv_6"
-            android:layout_width="0dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:visibility="invisible"
-            tools:src="@mipmap/ic_launcher" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="12dp"
-        android:orientation="horizontal"
-        android:visibility="gone">
-
-        <ImageView
-            android:id="@+id/iv_7"
-            android:layout_width="0dp"
-            android:layout_height="94dp"
-            android:layout_weight="1"
-            android:visibility="invisible"
-            tools:src="@mipmap/ic_launcher" />
-
-        <ImageView
-            android:id="@+id/iv_8"
-            android:layout_width="0dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:visibility="invisible"
-            tools:src="@mipmap/ic_launcher" />
-
-        <ImageView
-            android:id="@+id/iv_9"
-            android:layout_width="0dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:visibility="invisible"
-            tools:src="@mipmap/ic_launcher" />
-
-    </LinearLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/rl_goods"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/shape_personal_goods_bg"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp">
-
-        <ImageView
-            android:id="@+id/iv_goodsCover"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_centerVertical="true" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="8dp"
-            android:layout_toEndOf="@id/iv_goodsCover"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/tv_goodsTitle"
-                style="@style/TextViewTheme"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textColor="@color/minorTextColor"
-                android:textSize="15sp"
-                tools:text="小罐茶茶具茶水分离杯" />
-
-            <TextView
-                android:id="@+id/tv_goodsMoney"
-                style="@style/TextViewTheme"
-                android:layout_marginTop="3dp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textSize="15sp"
-                tools:text="￥ 1280" />
-
-
-            <TextView
-                android:id="@+id/tv_num"
-                style="@style/TextViewTheme"
-                android:layout_marginTop="3dp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textColor="@color/grey_999"
-                android:textSize="12sp"
-                tools:text="人已跟随购买" />
-
-        </LinearLayout>
-    </RelativeLayout>
+        android:layout_height="wrap_content">
+        <include layout="@layout/include_dynamic_item"/>
+    </FrameLayout>
 
     <RelativeLayout
         android:id="@+id/rl_praise"
@@ -252,30 +28,30 @@
             android:id="@+id/iv_img1"
             android:layout_width="26dp"
             android:layout_height="26dp"
-            tools:src="@mipmap/my_default_avatar" />
+            android:src="@mipmap/my_default_avatar" />
 
         <ImageView
             android:id="@+id/iv_img2"
             android:layout_width="26dp"
             android:layout_height="26dp"
             android:layout_marginStart="13sp"
-            tools:src="@mipmap/my_default_avatar" />
+            android:src="@mipmap/my_default_avatar" />
 
         <ImageView
             android:id="@+id/iv_img3"
             android:layout_width="26dp"
             android:layout_height="26dp"
             android:layout_marginStart="26dp"
-            tools:src="@mipmap/my_default_avatar" />
+            android:src="@mipmap/my_default_avatar" />
 
         <TextView
-            android:id="@+id/tv_praiseNum"
+            android:id="@+id/v_praiseNum"
             style="@style/TextViewTheme"
             android:layout_centerVertical="true"
             android:layout_marginStart="64dp"
             android:textColor="@color/grey_999"
             android:textSize="12sp"
-            tools:text="1250人赞过" />
+            android:text="1250人赞过" />
 
 
         <TextView
@@ -286,7 +62,7 @@
             android:layout_marginStart="64dp"
             android:textColor="@color/grey_999"
             android:textSize="12sp"
-            tools:text="浏览151156" />
+            android:text="浏览151156" />
 
     </RelativeLayout>
 
@@ -324,7 +100,7 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textColor="@color/minorTextColor"
-                tools:text="认证：宜宾市小尼化妆品官方账号" />
+                android:text="认证：宜宾市小尼化妆品官方账号" />
 
         </LinearLayout>
 
@@ -361,7 +137,7 @@
                 android:maxLines="1"
                 android:textColor="@color/grey_999"
                 android:textSize="13sp"
-                tools:text="共38件商品" />
+                android:text="共38件商品" />
 
         </LinearLayout>
 
@@ -387,7 +163,7 @@
         android:layout_height="45dp"
         android:gravity="center_vertical"
         android:paddingStart="12dp"
-        tools:text="356 条评论" />
+        android:text="356 条评论" />
 
     <View
         android:layout_width="match_parent"

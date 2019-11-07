@@ -10,7 +10,12 @@ import com.futrue.frame.data.bean.IBean
 import com.futrue.huomai.R
 import kotlinx.android.synthetic.main.activity_report.*
 
-
+/**
+ * @package    ReportActivity.kt
+ * @author     luan
+ * @date       2019-11-07
+ * @des        私信举报
+ */
 class ReportActivity : BaseNetActivity<ReportPresenter>(), View.OnClickListener {
 
 
@@ -32,7 +37,7 @@ class ReportActivity : BaseNetActivity<ReportPresenter>(), View.OnClickListener 
     }
 
     override fun initEvent() {
-        arrayOf(rl_1, rl_2, rl_3, rl_4).setOnClickListener(this)
+        arrayOf(rl_1, rl_2, rl_3, rl_4, v_submit).setOnClickListener(this)
     }
 
 
@@ -49,6 +54,9 @@ class ReportActivity : BaseNetActivity<ReportPresenter>(), View.OnClickListener 
             }
             rl_4 -> {
                 iv_4.visibility = if (iv_4.visibility == View.GONE) View.VISIBLE else View.GONE
+            }
+            v_submit -> {
+
             }
         }
     }

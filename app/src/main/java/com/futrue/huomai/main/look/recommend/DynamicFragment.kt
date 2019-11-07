@@ -1,24 +1,38 @@
 package com.futrue.huomai.main.look.recommend
 
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
 import com.futrue.frame.base.fragment.BaseRefreshListFragment
 import com.futrue.frame.data.api.BaseModel
 import com.futrue.frame.data.bean.IBean
 import com.futrue.huomai.R
+import com.futrue.huomai.main.home.video.location.LocationActivity
+import com.futrue.huomai.main.home.video.topic.TopicInfoActivity
 import com.futrue.huomai.main.look.detail.LookDetailActivity
 import com.futrue.huomai.main.look.label.LabelActivity
 
-class RecommendFragment : BaseRefreshListFragment<RecommendPresenter, IBean, RecommendAdapter>() {
+/**
+ * @package    DynamicFragment.kt
+ * @author     luan
+ * @date       2019-11-07
+ * @des        动态列表
+ */
+class DynamicFragment : BaseRefreshListFragment<DynamicPresenter, IBean, RecommendAdapter>() {
 
     companion object {
-        fun getNewInstance(): RecommendFragment {
+        //入口
+        val TYPE_RECOMMEND = 0//推荐
+        val TYPE_LOCATION = 0//地图
+        val TYPE_TOPIC = 0//话题
+
+        fun getNewInstance(type: Int): DynamicFragment {
             val bundle = Bundle()
-            return RecommendFragment().apply { arguments = bundle }
+            bundle.putInt("type", type)
+            return DynamicFragment().apply { arguments = bundle }
         }
     }
 
     override fun getLayoutID(): Int = R.layout.fragment_recommend
+    val type: Int by lazy { arguments?.getInt("type") ?: TYPE_RECOMMEND }
 
     override fun initView(savedInstanceState: Bundle?) {
     }
@@ -39,10 +53,13 @@ class RecommendFragment : BaseRefreshListFragment<RecommendPresenter, IBean, Rec
                 R.id.tv_more -> {
                 }
                 R.id.bt_messageLabel -> {
-                    LabelActivity.launch(mActivity)
+//                    LabelActivity.launch(mActivity)
+                    if (mActivity !is TopicInfoActivity)
+                        TopicInfoActivity.launch(this, TopicInfoActivity.TYPE_DYNAMIC)
                 }
-                R.id.bt_locationLabel -> {
-                    LabelActivity.launch(mActivity)
+                R.id.v_locationLabel -> {
+                    if (mActivity !is LocationActivity)
+                        LocationActivity.launch(this, LocationActivity.TYPE_DYNAMIC)
                 }
             }
         }

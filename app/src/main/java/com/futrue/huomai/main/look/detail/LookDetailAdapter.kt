@@ -15,9 +15,6 @@ class LookDetailAdapter @Inject constructor() :
             setText(R.id.tv_name, "小尼")
             setText(R.id.tv_content, "在喧嚣中迷失了自己，便想安静下来，#我要上热门# @旅游达人@旅游百事通")
             setText(R.id.tv_praise, "125")
-
-
-
             addOnClickListener(R.id.ll_praise, R.id.bt_attention)
         }
     }

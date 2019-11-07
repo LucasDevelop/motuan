@@ -4,7 +4,7 @@ import com.futrue.huomai.mvp.BasePresenter
 import com.futrue.huomai.data.ApiServer
 import javax.inject.Inject
 
-class RecommendPresenter @Inject constructor(v: RecommendFragment, apiServer: ApiServer) :
-    BasePresenter<RecommendFragment>(v, apiServer) {
+class DynamicPresenter @Inject constructor(v: DynamicFragment, apiServer: ApiServer) :
+    BasePresenter<DynamicFragment>(v, apiServer) {
 }
 

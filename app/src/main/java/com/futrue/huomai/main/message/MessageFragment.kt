@@ -8,10 +8,12 @@ import com.futrue.frame.base.fragment.BaseRefreshListFragment
 import com.futrue.frame.data.api.BaseModel
 import com.futrue.frame.data.bean.IBean
 import com.futrue.huomai.R
+import com.futrue.huomai.main.message.activitymsg.ActivityMsgActivity
 import com.futrue.huomai.main.message.commentlist.CommentListActivity
 import com.futrue.huomai.main.message.fenslist.FensListActivity
 import com.futrue.huomai.main.message.priselist.PriseListActivity
 import com.futrue.huomai.main.message.prviatelist.PrviateListActivity
+import com.futrue.huomai.main.message.systemmsg.SystemMsgActivity
 
 class MessageFragment : BaseRefreshListFragment<MessagePresenter, IBean, MessageAdapter>(),
     View.OnClickListener {
@@ -41,6 +43,16 @@ class MessageFragment : BaseRefreshListFragment<MessagePresenter, IBean, Message
             mTvCommentNum = findViewById(R.id.tv_commentNum)
         }
         mBaseAdapter.addHeaderView(view)
+        mBaseAdapter.setOnItemClickListener { adapter, view, position ->
+            when (position) {
+                0 -> {
+                    ActivityMsgActivity.launch(this)
+                }
+                1 -> {
+                    SystemMsgActivity.launch(this)
+                }
+            }
+        }
     }
 
     override fun initData() {
@@ -53,9 +65,6 @@ class MessageFragment : BaseRefreshListFragment<MessagePresenter, IBean, Message
 
     override fun initEvent() {
         arrayOf(mRlPrise, mRlFens, mRlComment, mRlPrivate).setOnClickListener(this)
-        mBaseAdapter.setOnItemChildClickListener { adapter, view, position ->
-
-        }
     }
 
     override fun onClick(v: View?) {

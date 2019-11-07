@@ -10,7 +10,7 @@ import com.futrue.huomai.main.home.video.topic.byvideos.TopicByVideoFragment
 import com.futrue.huomai.main.home.video.videolist.VideoListHotFragment
 import com.futrue.huomai.main.look.LookFragment
 import com.futrue.huomai.main.look.attention.LookAttentionFragment
-import com.futrue.huomai.main.look.recommend.RecommendFragment
+import com.futrue.huomai.main.look.recommend.DynamicFragment
 import com.futrue.huomai.main.message.MessageFragment
 import com.futrue.huomai.main.my.MyFragment
 import com.futrue.huomai.main.my.findfirend.addressbook.AddressBookFragment
@@ -57,7 +57,7 @@ abstract class FragmentModule {
     abstract fun injectPersonalLookFragment(): PersonalLookFragment
 
     @ContributesAndroidInjector
-    abstract fun injectRecommendFragment(): RecommendFragment
+    abstract fun injectRecommendFragment(): DynamicFragment
 
     @ContributesAndroidInjector
     abstract fun injectLookAttentionFragment(): LookAttentionFragment

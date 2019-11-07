@@ -42,18 +42,18 @@
             android:textSize="11sp"
             tools:text="遛遛六" />
 
-        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
-            android:id="@+id/bt_dateil"
-            android:layout_width="63dp"
-            android:layout_height="28dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:text="详情"
-            android:textColor="@color/textColor"
-            android:textSize="13sp"
-            app:qmui_backgroundColor="@color/yellow_FECC32"
-            app:qmui_borderWidth="0px"
-            app:qmui_radius="250dp" />
+<!--        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton-->
+<!--            android:id="@+id/bt_dateil"-->
+<!--            android:layout_width="63dp"-->
+<!--            android:layout_height="28dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:text="详情"-->
+<!--            android:textColor="@color/textColor"-->
+<!--            android:textSize="13sp"-->
+<!--            app:qmui_backgroundColor="@color/yellow_FECC32"-->
+<!--            app:qmui_borderWidth="0px"-->
+<!--            app:qmui_radius="250dp" />-->
 
     </RelativeLayout>
 
