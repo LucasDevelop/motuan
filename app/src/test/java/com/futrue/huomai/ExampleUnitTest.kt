@@ -1,5 +1,6 @@
 package com.futrue.huomai
 
+import com.futrue.huomai.utils.TimeUtil
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,6 +13,7 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+//        assertEquals(4, 2 + 2)
+        println(TimeUtil.formatTime(System.currentTimeMillis()-3800000*1000))
     }
 }

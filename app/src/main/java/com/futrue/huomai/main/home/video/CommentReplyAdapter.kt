@@ -1,7 +1,5 @@
 package com.futrue.huomai.main.home.video
 
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewTreeObserver
 import com.chad.library.adapter.base.BaseQuickAdapter
@@ -13,8 +11,7 @@ import com.futrue.huomai.utils.GlideUtil
 import com.futrue.huomai.utils.TimeUtil
 import com.futrue.huomai.widget.CommentChildView
 
-class CommentAdapter : BaseQuickAdapter<IBean, BaseViewHolder>(R.layout.item_comment),
-    CommentHelper {
+class CommentReplyAdapter : BaseQuickAdapter<IBean, BaseViewHolder>(R.layout.item_comment_reply),CommentHelper {
 
     override fun convert(helper: BaseViewHolder, item: IBean) {
         helper.apply {
@@ -33,15 +30,6 @@ class CommentAdapter : BaseQuickAdapter<IBean, BaseViewHolder>(R.layout.item_com
                         setTime(TimeUtil.formatTime(System.currentTimeMillis() - 3700 * 1000))
                     }
                 })
-            }
-            getView<View>(R.id.v_more_reply).setOnClickListener {
-                it.visibility = View.GONE
-                getView<RecyclerView>(R.id.v_reply_list).apply {
-                    layoutManager = LinearLayoutManager(mContext)
-                    val commentReplyAdapter = CommentReplyAdapter()
-                    adapter = commentReplyAdapter
-                    commentReplyAdapter.setNewData(List(5) { IBean() })
-                }
             }
 
             addOnClickListener(R.id.ll_praise, R.id.bt_attention)

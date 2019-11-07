@@ -1,7 +1,7 @@
 <resources>
     <!-- 全局使用的大小 -->
     <dimen name="space">12dp</dimen>
-
+    <dimen name="status_h">25dp</dimen>
 
 
 </resources>

@@ -2,11 +2,11 @@ package com.futrue.huomai.main.home.video
 
 import android.view.View
 import android.view.animation.AnimationUtils
-import com.blankj.utilcode.util.KeyboardUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.futrue.frame.data.bean.IBean
 import com.futrue.huomai.R
+import com.futrue.huomai.utils.AnimUtil
 import com.futrue.huomai.utils.GlideUtil
 import javax.inject.Inject
 
@@ -25,10 +25,18 @@ class VideoPlayerAdapter @Inject constructor() :
             setText(R.id.tv_likeNum, "123")
             setText(R.id.tv_commentNum, "321")
             setText(R.id.tv_shareNum, "231")
-            val loadAnimation = AnimationUtils.loadAnimation(mContext, R.anim.anim_rotate_icon)
-            helper.getView<View>(R.id.v_icon_view).startAnimation(loadAnimation)
+//            val loadAnimation = AnimationUtils.loadAnimation(mContext, R.anim.anim_rotate_icon)
+            helper.getView<View>(R.id.v_icon_view).startAnimation(AnimUtil.rotate())
 
-            addOnClickListener(R.id.tv_goodsClose,R.id.iv_like,R.id.iv_comment,R.id.iv_share,R.id.fl_user)
+            addOnClickListener(
+                R.id.tv_goodsClose,
+                R.id.iv_like,
+                R.id.iv_comment,
+                R.id.iv_share,
+                R.id.fl_user,
+                R.id.v_icon_view,
+                R.id.tv_location
+            )
         }
     }
 }

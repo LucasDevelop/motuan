@@ -96,7 +96,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp" />
 
-            <io.github.rockerhieu.emojicon.EmojiconEditText
+            <EditText
                 android:id="@+id/et_comment"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

@@ -7,6 +7,7 @@
     <color name="minorTextColor">#666</color>
     <color name="lineColor">#E0E0E0</color>
     <color name="gray_text">#999999</color>
+    <color name="divide">#E6E6E6</color>
 
 
     <color name="yellow_FECC32">#FECC32</color>
@@ -19,6 +20,7 @@
 
     <color name="red_FE4040">#FE4040</color>
     <color name="red_F85149">#F85149</color>
+    <color name="red_FE4C4C">#FE4C4C</color>
 
 
     <color name="grey_E0E0E0">#E0E0E0</color>
@@ -32,4 +34,5 @@
     <color name="grey_F8F8F8">#F8F8F8</color>
     <color name="grey_EAEAEA">#EAEAEA</color>
     <color name="grey_BFBFBF">#BFBFBF</color>
+    <color name="bg_menban">#41CECECE</color>
 </resources>

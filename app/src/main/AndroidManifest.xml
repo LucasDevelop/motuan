@@ -19,7 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".temp.TempActivity"></activity>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="081105ba7e376799e883f8151dfea2ca"/>
+        <activity android:name=".main.home.video.location.LocationActivity"></activity>
+        <activity android:name=".main.home.video.videolist.VideoListActivity" />
         <activity android:name=".main.my.setting.SettingActivity" />
         <activity android:name=".main.my.usercenter.intro.IntroActivity" />
         <activity android:name=".main.my.usercenter.settext.SetTextActivity" />

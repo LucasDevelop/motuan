@@ -20,7 +20,10 @@ android {
         }
         buildConfigField 'String', 'WX_APP_ID', '"wx0d373729d606b51e"'
         buildConfigField 'String', 'WX_APP_SECRET', '"06d0a9b000683255f7c0cca3c9f44227"'
-
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
+        }
     }
     signingConfigs {
         release {
@@ -67,4 +70,8 @@ dependencies {
     implementation 'com.ycjiang:ImagePreview:2.2.3'
     implementation 'com.contrarywind:Android-PickerView:4.1.8'
     implementation 'io.github.rockerhieu:emojicon:1.4.1'
+    //地图
+    implementation 'com.amap.api:location:4.7.0'
+    implementation 'com.amap.api:3dmap:6.9.2'
+    implementation 'com.amap.api:search:6.9.2'
 }

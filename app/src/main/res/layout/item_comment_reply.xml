@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/iv_head"
-        android:layout_width="34dp"
-        android:layout_height="34dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginStart="@dimen/space" />
 
     <RelativeLayout
@@ -43,7 +43,6 @@
             app:qmui_radius="2dp" />
 
         <LinearLayout
-            android:id="@+id/v_tag1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_name"
@@ -129,23 +128,6 @@
             <!--                android:textSize="12sp" />-->
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/v_more_reply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/v_tag1"
-            android:drawableRight="@mipmap/ic_jiantou_blue_b"
-            android:drawablePadding="5dp"
-            android:text="展开查看1116条回复"
-            android:textColor="#ff57578f"
-            android:textSize="12sp" />
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/v_reply_list"
-            android:layout_marginTop="15dp"
-            android:layout_below="@id/v_more_reply"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
     </RelativeLayout>
 
 </LinearLayout>

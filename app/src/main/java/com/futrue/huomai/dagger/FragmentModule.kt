@@ -5,6 +5,7 @@ import com.futrue.huomai.main.home.attention.AttentionFragment
 import com.futrue.huomai.main.home.hot.HotFragment
 import com.futrue.huomai.main.home.personaldetails.personallook.PersonalLookFragment
 import com.futrue.huomai.main.home.personaldetails.personalvideo.PersonalVideoFragment
+import com.futrue.huomai.main.home.video.videolist.VideoListHotFragment
 import com.futrue.huomai.main.look.LookFragment
 import com.futrue.huomai.main.look.attention.LookAttentionFragment
 import com.futrue.huomai.main.look.recommend.RecommendFragment
@@ -83,5 +84,6 @@ abstract class FragmentModule {
     @ContributesAndroidInjector
     abstract fun injectFindRecommendFragment(): FindRecommendFragment
 
-
+    @ContributesAndroidInjector
+    abstract fun injectVideoListHotFragment(): VideoListHotFragment
 }

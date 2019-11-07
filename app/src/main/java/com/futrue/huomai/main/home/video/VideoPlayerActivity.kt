@@ -13,6 +13,8 @@ import com.futrue.frame.data.api.BaseModel
 import com.futrue.frame.data.bean.IBean
 import com.futrue.huomai.R
 import com.futrue.huomai.main.home.personaldetails.PersonalDetailsActivity
+import com.futrue.huomai.main.home.video.location.LocationActivity
+import com.futrue.huomai.main.home.video.videolist.VideoListActivity
 import com.futrue.huomai.main.look.friendlist.FriendListActivity
 import com.futrue.huomai.utils.GlideUtil
 import com.futrue.huomai.window.SharePopup
@@ -87,8 +89,14 @@ class VideoPlayerActivity :
                 R.id.iv_share -> {
                     mShare.showAtLocation(view, Gravity.CENTER, 0, 0)
                 }
-                R.id.fl_user ->{
+                R.id.fl_user -> {
                     PersonalDetailsActivity.launch(this)
+                }
+                R.id.v_icon_view -> {//视频列表页
+                    VideoListActivity.launch(this)
+                }
+                R.id.tv_location -> {//定位
+                    LocationActivity.launch(this, LocationActivity.TYPE_VIDEO)
                 }
             }
         }
