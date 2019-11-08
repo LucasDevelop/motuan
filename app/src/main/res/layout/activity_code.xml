@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.author.code.CodeActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/status_h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/v_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@mipmap/search_delet" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="9dp"
+        android:text="输入验证码"
+        android:textColor="#ff333333"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/v_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="10dp"
+        android:text="验证码已发送至+86 15084311225"
+        android:textColor="#ff666666"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="38dp"
+        android:gravity="center_vertical">
+
+    </LinearLayout>
+
+    <com.futrue.huomai.widget.VerifyCodeView
+        android:id="@+id/v_code"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp" />
+
+    <TextView
+        android:id="@+id/v_send_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="30dp"
+        android:text="重新发送"
+        android:textColor="#ff999999"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/v_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="验证成功即视为注册账号，代表你已经阅读并同意"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/v_protocol_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“用户协议”"
+                android:textColor="#ff57578f"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="和"
+                android:textColor="#ff57578f"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/v_protocol_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“隐私政策”"
+                android:textColor="#ff57578f"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -7,6 +7,8 @@ import com.futrue.frame.base.fragment.BaseNetFragment
 import com.futrue.frame.data.api.BaseModel
 import com.futrue.frame.data.bean.IBean
 import com.futrue.huomai.R
+import com.futrue.huomai.UserInfo
+import com.futrue.huomai.main.author.login.LoginActivity
 import com.futrue.huomai.main.home.personaldetails.AppBarScrollingStatusChangeListener
 import com.futrue.huomai.main.home.shop.ShopActivity
 import com.futrue.huomai.main.my.findfirend.FindFirendActivity
@@ -24,6 +26,7 @@ import kotlinx.android.synthetic.main.content_scrolling.tv_lookNum
 import kotlinx.android.synthetic.main.content_scrolling.tv_videoNum
 import kotlinx.android.synthetic.main.fragment_my.*
 import org.devio.takephoto.model.TResult
+import javax.inject.Inject
 
 /**
  * @package    MyFragment.kt
@@ -50,6 +53,9 @@ class MyFragment : BaseNetFragment<MyPresenter>(), View.OnClickListener {
     private var mMyPriaseFragment: MyPriaseFragment? = null
 
     override fun getLayoutID(): Int = R.layout.fragment_my
+
+    @Inject
+    lateinit var userInfo: UserInfo
 
     override fun initView(savedInstanceState: Bundle?) {
         if (savedInstanceState != null) {
@@ -87,10 +93,10 @@ class MyFragment : BaseNetFragment<MyPresenter>(), View.OnClickListener {
 
     //更新状态
     private fun changeStatus() {
-        if (isShop){//有店铺
+        if (isShop) {//有店铺
             rl_shop.showView()
             v_no_shop.hideView()
-        }else{
+        } else {
             rl_shop.hideView()
             v_no_shop.showView()
         }
@@ -124,7 +130,8 @@ class MyFragment : BaseNetFragment<MyPresenter>(), View.OnClickListener {
     override fun initEvent() {
         arrayOf(
             bt_editor, iv_setting, iv_share, rl_findfirend, rl_toolFindfirend, iv_toolbarShare,
-            rl_video, rl_look, rl_private, rl_praise, rl_shop, rl_assistant, bt_setCover, v_shop
+            rl_video, rl_look, rl_private, rl_praise, rl_shop, rl_assistant, bt_setCover, v_shop,
+            iv_head, tv_name
         ).setOnClickListener(this)
         appBarLayout.addOnOffsetChangedListener(object : AppBarScrollingStatusChangeListener() {
             override fun onScrollStatusChange(state: CollapsingToolbarLayoutState?) {
@@ -148,6 +155,11 @@ class MyFragment : BaseNetFragment<MyPresenter>(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v) {
+            tv_name, iv_head -> {
+                if (!userInfo.isLogin()) {
+                    LoginActivity.launch(this)
+                }
+            }
             v_shop -> {
 
             }

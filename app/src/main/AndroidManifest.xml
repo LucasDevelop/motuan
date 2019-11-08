@@ -22,7 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".main.message.activitymsg.ActivityMsgActivity"></activity>
+        <activity android:name=".main.author.code.CodeActivity"></activity>
+        <activity android:name=".main.author.login.LoginActivity" />
+        <activity android:name=".main.message.activitymsg.ActivityMsgActivity" />
         <activity android:name=".main.message.systemmsg.SystemMsgActivity" />
         <activity android:name=".main.home.video.topic.TopicInfoActivity" />
 

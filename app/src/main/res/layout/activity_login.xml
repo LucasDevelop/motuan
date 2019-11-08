@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.author.login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/status_h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/v_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@mipmap/search_delet" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="9dp"
+        android:text="验证码登录"
+        android:textColor="#ff333333"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="38dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/ic_jiantou_b_black"
+            android:drawablePadding="5dp"
+            android:text="+86"
+            android:textColor="#ff333333"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/divide" />
+
+        <EditText
+            android:id="@+id/v_phone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@color/frame_transparent"
+            android:hint="请输入手机号"
+            android:textColor="#ff999999"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/v_clear"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/changen_delet" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="38dp"
+        android:background="@color/divide" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/v_send_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="38dp"
+        android:text="下一步"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        app:qmui_backgroundColor="#FADC80"
+        app:qmui_borderWidth="0dp"
+        app:qmui_radius="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/v_wx_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@mipmap/ic_weixin"
+            android:text="其他方式等登录"
+            android:textColor="#ff999999"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/v_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/select_check"
+                android:drawablePadding="10dp"
+                android:text="我已阅读并同意"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/v_protocol_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“用户协议”"
+                android:textColor="#ff57578f"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="和"
+                android:textColor="#ff57578f"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/v_protocol_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“隐私政策”"
+                android:textColor="#ff57578f"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

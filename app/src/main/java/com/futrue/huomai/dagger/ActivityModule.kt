@@ -2,6 +2,8 @@ package com.futrue.huomai.dagger
 
 
 import com.futrue.huomai.main.MainActivity
+import com.futrue.huomai.main.author.code.CodeActivity
+import com.futrue.huomai.main.author.login.LoginActivity
 import com.futrue.huomai.main.home.personaldetails.PersonalDetailsActivity
 import com.futrue.huomai.main.home.search.SearchActivity
 import com.futrue.huomai.main.home.shop.ShopActivity
@@ -163,5 +165,11 @@ abstract class ActivityModule {
 
     @ContributesAndroidInjector
     abstract fun injectActivityMsgActivity(): ActivityMsgActivity
+
+    @ContributesAndroidInjector
+    abstract fun injectLoginActivity(): LoginActivity
+
+    @ContributesAndroidInjector
+    abstract fun injectCodeActivity(): CodeActivity
 
 }
